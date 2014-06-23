@@ -51,8 +51,6 @@ forecast = [
 ]
 # p forecast[0]['temperatures']
 forecast.each  do |hash|
-  p "On #{hash['day']} the temp range is:"
-  p "High: #{hash['temperatures']['high']}"
-  p "Low: #{hash['temperatures']['low']}"
-  puts
+  puts "#{hash['day'].capitalize}"
+  puts "High: #{hash['temperatures']['high']}, Low: #{hash['temperatures']['low']}"
 end

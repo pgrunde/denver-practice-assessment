@@ -9,15 +9,12 @@ def largest_num(arr)
     memo > num ? memo : num
   end
 end
-
 p largest_num(numbers)
 puts
+
 puts "Sum of an array"
 def sum_array(arr)
   sum = arr.reduce(:+)
 end
-
 p sum_array(numbers)
 puts
-
-
